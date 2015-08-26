@@ -20,7 +20,7 @@ else()
     set(_lua_module_dir "${_lua_lib_dir}/lua/5.1")
 endif()
 
-set (LDEV_SRCS ldev.c ldev_serial.c)
+set (LDEV_SRCS src/ldev.c src/ldev_serial.c)
 add_definitions(-DLUA_USE_LINUX)
 
 add_library (ldev SHARED ${LDEV_SRCS})
