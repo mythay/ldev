@@ -21,10 +21,9 @@ else()
 endif()
 
 set (LDEV_SRCS src/ldev.c src/ldev_serial.c)
-add_definitions(-DLUA_USE_LINUX)
+#add_definitions(-DLUA_USE_LINUX)
 
-add_library (ldev SHARED ${LDEV_SRCS})
-#target_link_libraries(ldev zg)
+add_library (ldev MODULE  ${LDEV_SRCS})
 set_target_properties(ldev PROPERTIES PREFIX "")
 
 install(TARGETS ldev
