@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project (ldev)
+project (ldev C)
 
 set(LDEV_VERSION_MAJOR 0)
 set(LDEV_VERSION_MINOR 0)
